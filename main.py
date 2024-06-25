@@ -12,7 +12,7 @@ def load_cheat_sheet(file_path):
     cheat_sheet = []
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            cheat_sheet = [re.escape(line.strip()) for line in f if line.strip()]
+            cheat_sheet = [line.strip() for line in f]
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
     except UnicodeDecodeError:
