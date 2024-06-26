@@ -13,6 +13,10 @@ python3 main.py
 ```
 python3 client.py
 ```
+<img width="566" alt="image" src="https://github.com/BurovnikovEvgeniy/waf_module/assets/71849985/5db03df1-f8d2-4716-a4a3-7a0bd6efe38d">
+
 ```
 python3 server.py
 ```
+<img width="562" alt="image" src="https://github.com/BurovnikovEvgeniy/waf_module/assets/71849985/9732c4b4-bf33-4a91-85cd-9fadd65319de">
+
