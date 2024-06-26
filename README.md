@@ -6,5 +6,5 @@
 ```
 python3 main.py
 ```
-Далее необходимо перейти по адресу [и проте](http://127.0.0.1:5000) и протестировать waf в форме
+Далее необходимо перейти по адресу (http://127.0.0.1:5000) и протестировать waf в форме
 <img width="662" alt="image" src="https://github.com/BurovnikovEvgeniy/waf_module/assets/71849985/e772c5e7-5242-404f-a717-9deb1f433f7d">
