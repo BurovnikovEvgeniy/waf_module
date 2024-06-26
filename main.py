@@ -3,9 +3,6 @@ import re
 
 app = Flask(__name__)
 
-# Maintain a set of blocked IP addresses
-blocked_ips = set()
-
 
 # Function to load SQL injection cheat sheet file
 def load_cheat_sheet(file_path):
@@ -26,10 +23,6 @@ def load_cheat_sheet(file_path):
 def check_sql_injection(input_str, cheat_sheet):
     client_ip = request.remote_addr  # Get client IP address
 
-    # Check if client IP is already blocked
-    if client_ip in blocked_ips:
-        return True
-
     # Check if SQL injection patterns exist
     if not cheat_sheet:
         return False
@@ -37,8 +30,6 @@ def check_sql_injection(input_str, cheat_sheet):
     # Search input string against cheat sheet patterns
     for pattern in cheat_sheet:
         if re.search(pattern, input_str, re.IGNORECASE):
-            # Block the client IP if SQL injection detected
-            blocked_ips.add(client_ip)
             return True
     return False
 
